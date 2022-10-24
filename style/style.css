@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header .logo{
+    display: flex;
+}
+
+.header .nav-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-menu li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Lato';
+    color: #222222;
+
+    cursor: pointer;
+}
+
+.header .nav-menu li:hover{
+    text-decoration: underline;
+    text-decoration-color: #BDBDBD;
+    text-decoration-thickness: 3px;
+}
+
+.header a{
+    font-weight: 900;
+    font-size: 36px;
+    margin-left: 30px;
+    color: #005FA3;
+    text-decoration: none;
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.header button{
+    padding: 10px 21px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    border-radius: 25px;
+    border: 2px solid #000000;
+    background-color: transparent;
+}
+
+.header button:hover{
+    box-shadow: 0px 0px 5px 2px;
+
+    text-decoration: underline;
+    text-decoration-color: #BDBDBD;
+    text-decoration-thickness: 3px;
+}
+
+.header .context p{
+    margin: 0;
+}
+
+.main{
+    padding: 140px 0;
+    background-color: #EBEBEB;
+}
+
+.main .context p:nth-child(1){
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Lato';
+    color: #BDBDBD;
+    margin: 0 0 40px;
+}
+
+.main .context p:nth-child(2){
+    font-weight: 900;
+    font-size: 48px;
+    font-family: 'Merriweather';
+    color: #333333;
+    margin: 0 0 102px;
+}
+
+/* cards */
+
+.main .card-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.main .card{
+    background-image: url('../media/main/town_dark.png');
+    /* filter: grayscale(100%); */
+    width: 350px;
+    height: 360px;
+    background-size: cover;
+
+    position: relative;
+}
+
+.main .card:hover{
+    background-image: url('../media/main/town.png');
+    /* filter: grayscale(0%); */
+    width: 350px;
+    height: 360px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.main .card p{
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Lato';
+    color: #FFFFFF;
+
+    width: 187px;
+    height: 54px;
+
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.main .card button{
+    padding: 10px 21px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+
+    position: absolute;
+    bottom: 40px;
+    left: 45px;
+}
+
+.main .card button:hover{
+    cursor: pointer;
+
+    box-shadow: 0px 0px 5px 2px;
+
+}
+
+/* footer */
+
+.footer{
+    padding: 140px 0;
+}
+
+.footer .all-context{
+    display: flex;
+    /* justify-content: row; */
+    justify-content: space-between;
+}
+
+.footer .context p:nth-child(1){
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Lato';
+    color: #BDBDBD;
+    margin-bottom: 40px;
+}
+
+.footer .context p:nth-child(2){
+    font-weight: 900;
+    font-size: 48px;
+    font-family: 'Merriweather';
+    color: #333333;
+    width: 347px;
+    height: 117px;
+    margin-bottom: 60px;
+
+}
+
+.footer span{
+    color: #005FA3;
+}
+
+.footer .context p:nth-child(3){
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+
+    width: 445px;
+    height: 245px;
+}
+
+.footer .card{
+    background-image: url('../media/footer/back.png');
+    width: 255px;
+    height: 255px;
+    margin: 0 15px;
+
+    position: relative;
+}
+
+.footer .card:hover{
+    background-image: url('../media/footer/back_blue.png');
+}
+
+.footer .card-container{
+    display: flex;
+    margin: 30px 0;
+}
+
+.footer .card p:nth-child(1){
+    font-weight: 900;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #000000;
+
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.footer .card p:nth-child(2){
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Lato';
+    color: #000000;
+
+    width: 107px;
+
+    position: absolute;
+    top: 114px;
+    left: 40px;
+}
+
+.footer button{
+    padding: 10px 21px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    border-radius: 25px;
+    border: 2px solid #005FA3;
+    background-color: transparent;
+    color: #005FA3;
+
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+}
+
+.footer .card:hover button{
+    border: 2px solid white;
+    color: white;
+}
+
+.footer .card:hover p{
+    color: white;
+}
+
+.footer button:hover{
+    cursor: pointer;
+
+    box-shadow: 0px 0px 5px 2px;
+}
+
